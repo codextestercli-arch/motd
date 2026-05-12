@@ -1,0 +1,37 @@
+/* ─── DESIGN TOKENS ────────────────────────────────────────────────────────
+   All colour, font, and spacing tokens live here.
+   The "polish pass" values below override the defaults; both blocks are kept
+   together so there is a single source of truth.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Base palette (original) */
+  --bg:         #0d0d0f;
+  --panel:      #131315;
+  --panel2:     #1c1c1f;
+  --border:     #232326;
+  --border2:    #2e2e33;
+  --orange:     #f97316;
+  --orange-bg:  rgba(249, 115, 22, 0.12);
+  --text:       #e6e6e8;
+  --dim:        #6e6e78;
+  --mid:        #a0a0aa;
+  --green:      #22c55e;
+  --fh:         'Barlow Condensed', sans-serif;
+  --fb:         'Barlow', sans-serif;
+}
+
+/* Screenshot-match / GMod polish overrides */
+:root {
+  --bg:         #070708;
+  --panel:      rgba(14, 14, 14, 0.97);
+  --panel2:     rgba(22, 22, 23, 0.96);
+  --border:     rgba(255, 255, 255, 0.095);
+  --border2:    rgba(255, 255, 255, 0.14);
+  --orange:     #ff7a00;
+  --orange-bg:  rgba(255, 122, 0, 0.13);
+  --text:       #f1f1f1;
+  --dim:        #8a8a90;
+  --mid:        #b7b7bc;
+  --green:      #2ed667;
+}

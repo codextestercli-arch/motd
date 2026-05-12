@@ -1,0 +1,59 @@
+/* ─── XP BAR ──────────────────────────────────────────────────────────────── */
+
+.xpbar {
+  display: flex;
+  flex-shrink: 0;
+  height: 50px;
+  background: linear-gradient(180deg, rgba(16, 16, 17, 0.98), rgba(13, 13, 14, 0.98));
+  border: 1px solid var(--border);
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25) inset;
+}
+
+.xpi {
+  flex: 1;
+  padding: 10px 20px 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.xpi:last-child { border-right: none; }
+
+/* Active indicator — hidden in polish pass (uses box-shadow instead) */
+.xpi.active::after { display: none; }
+
+/* Top row */
+.xpi-top  { display: flex; align-items: center; justify-content: space-between; }
+.xpi-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--fh);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #dedee2;
+}
+.xpi-label svg { width: 20px; height: 20px; stroke-width: 2.4; }
+
+/* Per-skill icon colours */
+.xpi:nth-child(1) .xpi-label svg { stroke: #1681ff; color: #1681ff; }
+.xpi:nth-child(2) .xpi-label svg { stroke: #31c753; color: #31c753; }
+.xpi:nth-child(3) .xpi-label svg { stroke: var(--orange); color: var(--orange); }
+.xpi:nth-child(4) .xpi-label svg { stroke: #ff4444; color: #ff4444; }
+.xpi:nth-child(5) .xpi-label svg { stroke: #b846ff; color: #b846ff; }
+
+.xpi-val   { font-size: 10px; color: #d5d5da; font-family: var(--fh); }
+
+/* Progress track */
+.xpi-track { height: 5px; background: #313134; border-radius: 999px; overflow: hidden; }
+.xpi-fill  {
+  height: 100%;
+  background: var(--orange);
+  border-radius: 999px;
+  box-shadow: 0 0 10px rgba(255, 122, 0, 0.32);
+}

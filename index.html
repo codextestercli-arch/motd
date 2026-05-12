@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backyard RP — MOTD</title>
+  <script type="module" src="/src/js/main.js"></script>
+</head>
+<body>
+<div id="motd">
+
+<!-- ════════════════ TOP BAR ════════════════ -->
+<div class="topbar">
+  <div class="tl">
+    <div class="tl-icons">
+      <div class="ib">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="ib">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+      </div>
+    </div>
+    <div class="srv-name">
+      <div class="t1">Welcome to Our DarkRP Server</div>
+      <div class="t2">Build your story. Protect your turf. Leave your legacy.</div>
+    </div>
+  </div>
+
+  <div class="tc">
+    <div class="logo-wrap">
+      <div class="logo-line"></div>
+      <div class="logo-text">
+        <span class="bk">Backyard</span>
+        <span class="rp">RP</span>
+      </div>
+      <div class="logo-line r"></div>
+    </div>
+  </div>
+
+  <div class="tr-btns">
+    <div class="ib"><span class="dot"></span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </div>
+    <div class="ib">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+    </div>
+    <div class="ib close-ib">✕</div>
+  </div>
+</div>
+
+<!-- ════════════════ XP BAR ════════════════ -->
+<div class="xpbar">
+  <div class="xpi">
+    <div class="xpi-top">
+      <div class="xpi-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6.18V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2.18C7.17 7.01 5 9.82 5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5c0-3.18-2.17-5.99-5-6.82z"/></svg>
+        FISHING XP
+      </div>
+      <div class="xpi-val">0 / 0 XP</div>
+    </div>
+    <div class="xpi-track"><div class="xpi-fill" style="width:0%"></div></div>
+  </div>
+  <div class="xpi">
+    <div class="xpi-top">
+      <div class="xpi-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 0 20A10 10 0 0 1 12 2z"/><path d="M12 6v6l4 2"/></svg>
+        HARVESTING XP
+      </div>
+      <div class="xpi-val">0 / 0 XP</div>
+    </div>
+    <div class="xpi-track"><div class="xpi-fill" style="width:0%"></div></div>
+  </div>
+  <div class="xpi active">
+    <div class="xpi-top">
+      <div class="xpi-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+        JOB XP
+      </div>
+      <div class="xpi-val">1,475 / 2,617 XP</div>
+    </div>
+    <div class="xpi-track"><div class="xpi-fill" style="width:56%"></div></div>
+  </div>
+  <div class="xpi">
+    <div class="xpi-top">
+      <div class="xpi-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+        BASING XP
+      </div>
+      <div class="xpi-val">0 / 0 XP</div>
+    </div>
+    <div class="xpi-track"><div class="xpi-fill" style="width:0%"></div></div>
+  </div>
+  <div class="xpi">
+    <div class="xpi-top">
+      <div class="xpi-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        QUESTING XP
+      </div>
+      <div class="xpi-val">0 / 0 XP</div>
+    </div>
+    <div class="xpi-track"><div class="xpi-fill" style="width:0%"></div></div>
+  </div>
+</div>
+
+<!-- ════════════════ MAIN COLUMNS ════════════════ -->
+<div class="cols">
+
+  <!-- ── LEFT COLUMN ── -->
+  <div class="col">
+
+    <!-- Player Profile -->
+    <div class="pnl">
+      <div class="ph">
+        <div class="pt">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          PLAYER PROFILE
+        </div>
+      </div>
+      <div class="prof-main">
+        <div class="ring-wrap">
+          <svg width="88" height="88" viewBox="0 0 88 88">
+            <circle cx="44" cy="44" r="38" fill="none" stroke="#252528" stroke-width="6"/>
+            <circle cx="44" cy="44" r="38" fill="none" stroke="#ff7a00" stroke-width="6"
+              stroke-dasharray="238.76" stroke-dashoffset="60"
+              stroke-linecap="round" transform="rotate(-90 44 44)"/>
+          </svg>
+          <div class="ring-inner">
+            <span class="ring-num">30</span>
+            <span class="ring-lbl">LEVEL</span>
+          </div>
+        </div>
+        <div class="avatar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.5"><circle cx="12" cy="8" r="5"/><path d="M6 20c0-4 2.7-7 6-7s6 3 6 7"/></svg>
+        </div>
+        <div>
+          <div class="pname">Stizzy</div>
+          <div class="prank">superadmin</div>
+        </div>
+      </div>
+      <div class="prof-stats">
+        <div class="pstat"><span class="pstat-v">0</span><span class="pstat-l">Gang</span></div>
+        <div class="pstat"><span class="pstat-v">2 / 44</span><span class="pstat-l">Quests</span></div>
+        <div class="pstat"><span class="pstat-v">90h</span><span class="pstat-l">Time Played</span></div>
+      </div>
+    </div>
+
+    <!-- Weekly Activity -->
+    <div class="pnl">
+      <div class="ph">
+        <div class="pt">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          WEEKLY ACTIVITY
+        </div>
+        <select class="period-sel"><option>This Week</option><option>Last Week</option></select>
+      </div>
+      <svg width="100%" height="108" viewBox="0 0 360 108" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ff7a00" stop-opacity=".35"/>
+            <stop offset="100%" stop-color="#ff7a00" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <line x1="28" y1="8"  x2="356" y2="8"  stroke="#232326" stroke-width="1"/>
+        <line x1="28" y1="28" x2="356" y2="28" stroke="#232326" stroke-width="1"/>
+        <line x1="28" y1="48" x2="356" y2="48" stroke="#232326" stroke-width="1"/>
+        <line x1="28" y1="68" x2="356" y2="68" stroke="#232326" stroke-width="1"/>
+        <line x1="28" y1="88" x2="356" y2="88" stroke="#232326" stroke-width="1"/>
+        <text x="24" y="11"  fill="#6e6e78" font-size="8" text-anchor="end" font-family="Barlow Condensed,sans-serif">8h</text>
+        <text x="24" y="31"  fill="#6e6e78" font-size="8" text-anchor="end" font-family="Barlow Condensed,sans-serif">6h</text>
+        <text x="24" y="51"  fill="#6e6e78" font-size="8" text-anchor="end" font-family="Barlow Condensed,sans-serif">4h</text>
+        <text x="24" y="71"  fill="#6e6e78" font-size="8" text-anchor="end" font-family="Barlow Condensed,sans-serif">2h</text>
+        <text x="24" y="91"  fill="#6e6e78" font-size="8" text-anchor="end" font-family="Barlow Condensed,sans-serif">0h</text>
+        <polygon points="44,88 94,87 148,84 202,86 256,83 308,79 352,71 352,88 44,88" fill="url(#cg)"/>
+        <polyline points="44,88 94,87 148,84 202,86 256,83 308,79 352,71"
+          fill="none" stroke="#ff7a00" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="44"  cy="88" r="3" fill="#ff7a00"/>
+        <circle cx="94"  cy="87" r="3" fill="#ff7a00"/>
+        <circle cx="148" cy="84" r="3" fill="#ff7a00"/>
+        <circle cx="202" cy="86" r="3" fill="#ff7a00"/>
+        <circle cx="256" cy="83" r="3" fill="#ff7a00"/>
+        <circle cx="308" cy="79" r="3" fill="#ff7a00"/>
+        <circle cx="352" cy="71" r="4" fill="#ff7a00"/>
+        <rect x="330" y="56" width="36" height="14" rx="2" fill="#ff7a00"/>
+        <text x="348" y="66" fill="#000" font-size="9" text-anchor="middle"
+          font-family="Barlow Condensed,sans-serif" font-weight="700">1.7h</text>
+        <text x="44"  y="102" fill="#6e6e78" font-size="8" text-anchor="middle" font-family="Barlow Condensed,sans-serif">Mon</text>
+        <text x="94"  y="102" fill="#6e6e78" font-size="8" text-anchor="middle" font-family="Barlow Condensed,sans-serif">Tue</text>
+        <text x="148" y="102" fill="#6e6e78" font-size="8" text-anchor="middle" font-family="Barlow Condensed,sans-serif">Wed</text>
+        <text x="202" y="102" fill="#6e6e78" font-size="8" text-anchor="middle" font-family="Barlow Condensed,sans-serif">Thu</text>
+        <text x="256" y="102" fill="#6e6e78" font-size="8" text-anchor="middle" font-family="Barlow Condensed,sans-serif">Fri</text>
+        <text x="308" y="102" fill="#6e6e78" font-size="8" text-anchor="middle" font-family="Barlow Condensed,sans-serif">Sat</text>
+        <text x="352" y="102" fill="#6e6e78" font-size="8" text-anchor="middle" font-family="Barlow Condensed,sans-serif">Sun</text>
+      </svg>
+    </div>
+
+    <!-- Favorite Jobs -->
+    <div class="pnl">
+      <div class="ph">
+        <div class="pt">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          FAVORITE JOBS
+        </div>
+        <span class="link">View All Jobs</span>
+      </div>
+      <div class="jobs-row">
+        <div class="jcard">
+          <div class="javatar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="jname">Kingpin</div>
+          <div class="jcount">0 / 1</div>
+        </div>
+        <div class="jcard">
+          <div class="javatar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="jname">Mayor</div>
+          <div class="jcount">0 / 1</div>
+        </div>
+        <div class="jcard">
+          <div class="javatar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="jname">Staff On Duty</div>
+          <div class="jcount">0 / inf</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rules Quick View -->
+    <div class="pnl grow">
+      <div class="ph">
+        <div class="pt">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          RULES QUICK VIEW
+        </div>
+      </div>
+      <div class="rule-item"><div class="rnum">01</div><div><div class="rtitle">No RDM</div><div class="rdesc">Do not kill or harm others without a valid reason.</div></div></div>
+      <div class="rule-item"><div class="rnum">02</div><div><div class="rtitle">No FailRP</div><div class="rdesc">Stay in character and act within the roleplay scenario.</div></div></div>
+      <div class="rule-item"><div class="rnum">03</div><div><div class="rtitle">Respect Staff</div><div class="rdesc">Follow staff instructions and treat everyone with respect.</div></div></div>
+      <div class="rule-item"><div class="rnum">04</div><div><div class="rtitle">No Exploits</div><div class="rdesc">Do not abuse bugs or glitches for an unfair advantage.</div></div></div>
+      <div class="rule-item"><div class="rnum">05</div><div><div class="rtitle">Use Common Sense</div><div class="rdesc">Use good judgement in every situation.</div></div></div>
+      <button class="obtn">View Full Rules →</button>
+    </div>
+
+  </div>
+
+  <!-- ── CENTER COLUMN ── -->
+  <div class="col">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-bg-layer"></div>
+      <img src="/src/imgs/cityscapeblur.png" class="hero-city-img-left" alt="cityscape blur"/>
+      <img src="/src/imgs/cityscape.png" class="hero-city-img" alt="cityscape"/>
+      <div class="hero-body">
+        <div class="hero-tag">SERVER UPDATE</div>
+        <div class="hero-title">Backyard RP</div>
+        <div class="hero-sub">Stay up to date with the latest changes and improvements.</div>
+        <button class="hero-btn">View Full Changelog →</button>
+      </div>
+      <div class="hero-dots">
+        <div class="hdot active"></div>
+        <div class="hdot"></div>
+        <div class="hdot"></div>
+        <div class="hdot"></div>
+      </div>
+    </div>
+
+    <!-- Latest Changes + Settings -->
+    <div class="split-row">
+      <div class="split-pnl">
+        <div class="ph">
+          <div class="pt">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            LATEST CHANGES
+          </div>
+        </div>
+        <div class="chg-item">
+          <div class="chg-dot"></div>
+          <div>
+            <div class="chg-title">Added crafting bench system</div>
+            <div class="chg-desc">Added the ability to craft more than one of an item at a time with a crafting bench.</div>
+          </div>
+        </div>
+        <div class="chg-item">
+          <div class="chg-dot"></div>
+          <div>
+            <div class="chg-title">Fixed crafting duplication</div>
+            <div class="chg-desc">Fixed rare issue where creating a crafting may fail due to duplicate fields.</div>
+          </div>
+        </div>
+        <div class="chg-item">
+          <div class="chg-dot"></div>
+          <div>
+            <div class="chg-title">Performance improvements</div>
+            <div class="chg-desc">Reduced server lag and improved object cleanup across all major systems.</div>
+          </div>
+        </div>
+      </div>
+      <div class="split-pnl">
+        <div class="ph" style="margin-bottom:12px">
+          <div class="pt">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M19.07 19.07l-1.41-1.41M12 2v2M12 20v2"/></svg>
+            SETTINGS &amp; PREFERENCES
+          </div>
+        </div>
+        <div class="sg">
+          <div class="sr"><span class="sl">FPS Boost</span>
+            <label class="tgl"><input type="checkbox"><div class="tgl-track"><div class="tgl-thumb"></div></div></label>
+          </div>
+          <div class="sr"><span class="sl">Join Discord</span>
+            <label class="tgl"><input type="checkbox" checked><div class="tgl-track"><div class="tgl-thumb"></div></div></label>
+          </div>
+          <div class="sr"><span class="sl">Join Steam Group</span>
+            <label class="tgl"><input type="checkbox"><div class="tgl-track"><div class="tgl-thumb"></div></div></label>
+          </div>
+          <div class="sr"><span class="sl">Nitro Booster Drops</span>
+            <label class="tgl"><input type="checkbox" checked><div class="tgl-track"><div class="tgl-thumb"></div></div></label>
+          </div>
+          <div class="sr"><span class="sl">Sync Forums Account</span>
+            <label class="tgl"><input type="checkbox"><div class="tgl-track"><div class="tgl-thumb"></div></div></label>
+          </div>
+          <div class="sr"><span class="sl">Optional Server Content</span>
+            <label class="tgl"><input type="checkbox" checked><div class="tgl-track"><div class="tgl-thumb"></div></div></label>
+          </div>
+          <div class="sr"><span class="sl">Disable Custom Models</span>
+            <label class="tgl"><input type="checkbox"><div class="tgl-track"><div class="tgl-thumb"></div></div></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Getting Started -->
+    <div class="pnl grow">
+      <div class="ph">
+        <div class="pt">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          GETTING STARTED
+        </div>
+      </div>
+      <div class="step-item"><div class="snum">01</div><div><div class="stitle">Pick a job</div><div class="sdesc">Choose a job and start earning money.</div></div></div>
+      <div class="step-item"><div class="snum">02</div><div><div class="stitle">Read the rules</div><div class="sdesc">Make sure to understand the server rules.</div></div></div>
+      <div class="step-item"><div class="snum">03</div><div><div class="stitle">Join Discord</div><div class="sdesc">Connect with the community and get updates.</div></div></div>
+      <div class="step-item"><div class="snum">04</div><div><div class="stitle">Claim rewards</div><div class="sdesc">Check daily rewards for free items and cash.</div></div></div>
+      <div class="step-item"><div class="snum">05</div><div><div class="stitle">Explore the city</div><div class="sdesc">Roleplay, build, and make your own story.</div></div></div>
+      <button class="obtn">Open Game Guide →</button>
+    </div>
+
+  </div>
+
+  <!-- ── RIGHT COLUMN ── -->
+  <div class="col">
+
+    <!-- Current Missions -->
+    <div class="pnl">
+      <div class="ph">
+        <div class="pt">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          CURRENT MISSIONS
+        </div>
+      </div>
+      <div class="m-item">
+        <div class="mnum">#1</div>
+        <div style="flex:1">
+          <div class="mname">Use emotes</div>
+          <div class="mbar"></div>
+        </div>
+        <div class="mbadge">EASY</div>
+        <div class="mpct">0%</div>
+      </div>
+      <div class="m-item">
+        <div class="mnum">#2</div>
+        <div style="flex:1">
+          <div class="mname">Use animated emotes</div>
+          <div class="mbar"></div>
+        </div>
+        <div class="mbadge">EASY</div>
+        <div class="mpct">0%</div>
+      </div>
+      <div class="view-all"><span>View All Missions</span><span>→</span></div>
+    </div>
+
+    <!-- Daily Rewards -->
+    <div class="pnl">
+      <div class="dr-head">
+        <div class="pt">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+          DAILY REWARDS
+        </div>
+        <span class="dr-timer">Resets in 18h 16m</span>
+      </div>
+      <div class="dr-grid">
+        <div class="dcard">
+          <div class="dimg">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <div class="dinfo">
+            <div class="dname">Glock 18</div>
+            <div class="damt">Amount: 2</div>
+            <button class="claim-btn">CLAIM</button>
+          </div>
+        </div>
+        <div class="dcard">
+          <div class="dimg">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg>
+          </div>
+          <div class="dinfo">
+            <div class="dname">CSGO Knife Case</div>
+            <div class="damt">Amount: 2</div>
+            <button class="claim-btn">CLAIM</button>
+          </div>
+        </div>
+        <div class="dcard">
+          <div class="dimg">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="dinfo">
+            <div class="dname">$25,000 Cash</div>
+            <div class="damt">Amount: 1</div>
+            <button class="claim-btn">CLAIM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Server Status -->
+    <div class="pnl grow">
+      <div class="ph">
+        <div class="pt">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          SERVER STATUS
+        </div>
+      </div>
+      <div class="st-item">
+        <div class="st-ico"><div class="st-led"></div></div>
+        <div class="st-lbl">Players Online</div>
+        <div class="st-val green">1 / 32</div>
+      </div>
+      <div class="st-item">
+        <div class="st-ico">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="st-lbl">Staff Online</div>
+        <div class="st-val">1</div>
+      </div>
+      <div class="st-item">
+        <div class="st-ico">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+        </div>
+        <div class="st-lbl">Current Map</div>
+        <div class="st-val sm">rp_downtown_tits_v2</div>
+      </div>
+      <div class="st-item">
+        <div class="st-ico">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="st-lbl">Server Uptime</div>
+        <div class="st-val">1h 40m</div>
+      </div>
+      <div class="st-item">
+        <div class="st-ico">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        </div>
+        <div class="st-lbl">Restart Time</div>
+        <div class="st-val sm">Daily at 6:00 AM EST</div>
+      </div>
+      <div class="st-actions">
+        <button class="st-btn">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+          Join Discord
+        </button>
+        <button class="st-btn">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
+          Support
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</div><!-- /cols -->
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<div class="fbar">
+  <div class="fi">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+    SHOP
+  </div>
+  <div class="fi">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+    DISCORD
+  </div>
+  <div class="fi active">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    RULES
+  </div>
+  <div class="fi">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    FORUMS
+  </div>
+  <div class="fi">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+    STEAM
+  </div>
+</div>
+
+</div><!-- /motd -->
+
+</body>
+</html>

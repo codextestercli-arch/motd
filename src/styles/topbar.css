@@ -1,0 +1,86 @@
+/* ─── TOP BAR ─────────────────────────────────────────────────────────────── */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding: 0 17px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, rgba(18, 18, 19, 0.98), rgba(12, 12, 13, 0.98));
+  border: 1px solid var(--border);
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25) inset;
+  position: relative;
+}
+
+/* Left cluster */
+.tl         { display: flex; align-items: center; gap: 9px; }
+.tl-icons   { display: flex; gap: 4px; }
+
+/* Icon buttons */
+.ib {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #d7d7dc;
+  font-size: 14px;
+  position: relative;
+  transition: all 0.15s;
+}
+.ib svg               { width: 22px; height: 22px; }
+.tr-btns .ib svg      { width: 18px; height: 18px; }
+.ib:hover             { border-color: var(--orange); color: var(--orange); }
+.close-ib             { font-size: 18px; }
+.close-ib:hover       { background: rgba(239, 68, 68, 0.12); border-color: rgba(239, 68, 68, 0.5); color: #ef4444; }
+
+/* Notification dot */
+.ib .dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 7px;
+  height: 7px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+/* Server name */
+.srv-name .t1 { font-size: 14px; font-weight: 700; color: var(--text); }
+.srv-name .t2 { font-size: 10px; color: #a0a0a6; }
+
+/* Centre logo */
+.tc        { position: absolute; left: 50%; transform: translateX(-50%); text-align: center; }
+.logo-wrap { display: flex; align-items: center; gap: 14px; }
+.logo-line   { width: 56px; height: 1px; background: linear-gradient(to left, var(--orange), transparent); }
+.logo-line.r { background: linear-gradient(to right, var(--orange), transparent); }
+.logo-text   { font-family: var(--fh); line-height: 1.1; letter-spacing: 2px; }
+.logo-text .bk {
+  display: block;
+  font-size: 31px;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--text);
+}
+.logo-text .rp {
+  display: block;
+  font-size: 29px;
+  font-family: Georgia, serif;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 0.7;
+  color: var(--orange);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Right buttons */
+.tr-btns { display: flex; gap: 5px; align-items: center; }

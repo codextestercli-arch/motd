@@ -1,0 +1,142 @@
+/* ─── PLAYER PROFILE ──────────────────────────────────────────────────────── */
+
+.prof-main {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 13px;
+}
+
+/* Level ring */
+.ring-wrap {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  flex-shrink: 0;
+}
+.ring-wrap svg {
+  position: absolute;
+  inset: 0;
+  width: 88px;
+  height: 88px;
+}
+.ring-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 88px;
+  height: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--fh);
+  transform: translateX(4px);
+  pointer-events: none;
+}
+.ring-num {
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 0.9;
+}
+.ring-lbl {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  margin-top: 2px;
+  line-height: 1;
+  color: #f1f1f1;
+}
+
+/* Avatar */
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: var(--panel2);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  overflow: hidden;
+}
+.avatar svg { display: none; }
+
+/* Name / rank */
+.pname { font-size: 17px; font-weight: 700; font-family: var(--fb); letter-spacing: 0.5px; }
+.prank { color: var(--orange); font-size: 12px; font-family: var(--fb); font-weight: 700; }
+
+/* Stats row */
+.prof-stats {
+  display: flex;
+  gap: 12px;
+  border-top: 0;
+  padding-top: 2px;
+}
+.pstat {
+  flex: 1;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(21, 21, 22, 0.96), rgba(13, 13, 14, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 6px;
+  padding: 10px 6px;
+}
+.pstat-v {
+  display: block;
+  font-family: var(--fh);
+  font-size: 17px;
+  font-weight: 700;
+}
+.pstat-l {
+  display: block;
+  font-family: var(--fh);
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #babac0;
+  text-transform: uppercase;
+}
+
+/* Period selector (weekly activity) */
+.period-sel {
+  background: #171719;
+  border: 1px solid var(--border2);
+  border-radius: 5px;
+  padding: 5px 26px 5px 12px;
+  color: #fff;
+  font-size: 10px;
+  font-family: var(--fb);
+  cursor: pointer;
+}
+
+/* Favourite jobs */
+.jobs-row  { display: flex; gap: 9px; }
+.jcard {
+  flex: 1;
+  background: linear-gradient(180deg, rgba(22, 22, 23, 0.95), rgba(13, 13, 14, 0.98));
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  padding: 8px 7px 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.jcard:hover { border-color: var(--orange); background: var(--orange-bg); }
+.javatar {
+  width: 58px;
+  height: 54px;
+  background: var(--border);
+  border-radius: 3px;
+  margin: 0 auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background-size: cover;
+  background-position: center bottom;
+  background-color: transparent;
+}
+.javatar svg { display: none; }
+.jname   { font-family: var(--fh); font-size: 12px; font-weight: 600; line-height: 1; margin-bottom: 1px; }
+.jcount  { font-size: 10px; color: #d7d7db; }

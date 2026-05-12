@@ -1,0 +1,126 @@
+/* ─── SPLIT ROW (Changes / Settings) ─────────────────────────────────────── */
+
+.split-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 0 0 238px;
+  gap: 10px;
+  min-height: 0;
+  overflow: hidden;
+  border-bottom: 0;
+}
+
+.split-pnl {
+  padding: 13px 16px;
+  background: linear-gradient(180deg, rgba(24, 24, 25, 0.94), rgba(14, 14, 15, 0.98));
+  overflow: hidden;
+}
+.split-pnl:first-child { border-right: 1px solid var(--border); }
+
+/* Changelog items */
+.chg-item {
+  display: flex;
+  gap: 9px;
+  padding: 10px 0;
+  border-bottom: 0;
+}
+.chg-item:last-child { border-bottom: none; }
+.chg-dot   { width: 6px; height: 6px; border-radius: 50%; background: var(--orange); flex-shrink: 0; margin-top: 6px; }
+.chg-title { font-size: 12px; font-weight: 600; margin-bottom: 2px; color: #fff; }
+.chg-desc  { font-size: 10.5px; color: #c2c2c8; line-height: 1.4; }
+
+/* Settings grid */
+.sg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 18px;
+  padding-top: 8px;
+  align-content: start;
+}
+.sr { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
+.sl { font-size: 12px; color: #d2d2d7; flex: 1; }
+
+/* Toggle switch */
+.tgl { position: relative; width: 30px; height: 16px; cursor: pointer; flex-shrink: 0; }
+.tgl input { display: none; }
+.tgl-track {
+  position: absolute;
+  inset: 0;
+  background: #59595c;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+.tgl input:checked ~ .tgl-track { background: var(--orange); }
+.tgl-thumb {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: left 0.15s;
+}
+.tgl input:checked ~ .tgl-track .tgl-thumb { left: 16px; }
+
+/* ─── RULES ───────────────────────────────────────────────────────────────── */
+
+.rule-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  border-bottom: 0;
+  border-radius: 4px;
+  padding: 7px 8px;
+  margin-bottom: 2px;
+}
+.rule-item:nth-of-type(odd)  { background: rgba(255, 255, 255, 0.025); }
+.rule-item:nth-of-type(even) { background: rgba(0, 0, 0, 0.12); }
+
+.rnum   { font-family: var(--fh); font-size: 15px; font-weight: 700; color: var(--orange); flex-shrink: 0; width: 25px; }
+.rtitle { font-size: 12px; font-weight: 600; margin-bottom: 1px; color: #fff; }
+.rdesc  { font-size: 11px; color: #c3c3c9; line-height: 1.15; }
+
+/* ─── GETTING STARTED ─────────────────────────────────────────────────────── */
+
+/* Getting Started lives in col 2, .pnl.grow — tightly packed */
+.col:nth-child(2) > .pnl.grow {
+  overflow: hidden !important;
+  padding: 10px 16px 9px !important;
+}
+.col:nth-child(2) > .pnl.grow .ph {
+  margin-bottom: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.step-item {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  border-bottom: 0;
+  border-radius: 4px;
+  padding: 5px 8px !important;
+  margin-bottom: 2px !important;
+}
+.step-item:nth-of-type(odd)  { background: rgba(255, 255, 255, 0.025); }
+.step-item:nth-of-type(even) { background: rgba(0, 0, 0, 0.12); }
+
+.snum   { font-family: var(--fh); font-size: 13px !important; font-weight: 700; color: var(--orange); flex-shrink: 0; width: 20px !important; line-height: 1.05 !important; }
+.stitle { font-size: 11px !important; font-weight: 600; margin-bottom: 1px !important; color: #fff; line-height: 1.05 !important; }
+.sdesc  { font-size: 9.5px !important; color: #c3c3c9; line-height: 1.05 !important; }
+
+.col:nth-child(2) > .pnl.grow .obtn {
+  margin-top: 5px !important;
+  padding: 6px 12px !important;
+  min-width: 185px !important;
+  width: 38% !important;
+  font-size: 11px !important;
+}
+
+@media (max-height: 860px) {
+  .split-row { flex-basis: 225px; }
+  .col:nth-child(2) > .pnl.grow { padding-top: 8px !important; padding-bottom: 7px !important; }
+  .col:nth-child(2) > .pnl.grow .step-item { padding-top: 4px !important; padding-bottom: 4px !important; }
+  .col:nth-child(2) > .pnl.grow .sdesc { font-size: 9px !important; }
+  .col:nth-child(2) > .pnl.grow .obtn { margin-top: 4px !important; padding-top: 5px !important; padding-bottom: 5px !important; }
+}

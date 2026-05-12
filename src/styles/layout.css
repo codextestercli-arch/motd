@@ -1,0 +1,95 @@
+/* ─── COLUMNS & PANEL BASE ────────────────────────────────────────────────── */
+
+/* Three-column grid */
+.cols {
+  display: grid;
+  grid-template-columns: 30.5fr 37.5fr 30.5fr;
+  gap: 14px;
+  flex: 1;
+  min-height: 0;
+  margin-top: 11px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  border-right: 0;
+  overflow: hidden;
+  gap: 10px;
+  min-height: 0;
+}
+
+/* Panel card */
+.pnl,
+.hero,
+.split-pnl {
+  background: linear-gradient(180deg, rgba(24, 24, 25, 0.94), rgba(14, 14, 15, 0.98));
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+    0 12px 22px rgba(0, 0, 0, 0.16);
+}
+
+.pnl {
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.pnl.grow {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/* Panel header row */
+.ph {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.065);
+}
+
+/* Panel title */
+.pt {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--fh);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  color: #f1f1f3;
+}
+.pt svg { color: #c6c6cc; width: 17px; height: 17px; }
+
+/* Shared orange button */
+.obtn {
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(180deg, #ff8a13, #ff7600);
+  color: #fff;
+  border: 1px solid rgba(255, 156, 45, 0.45);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.13), 0 8px 16px rgba(255, 122, 0, 0.12);
+  border-radius: 3px;
+  padding: 8px 14px;
+  font-family: var(--fb);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  transition: opacity 0.15s;
+}
+.obtn:hover { opacity: 0.85; }
+
+/* Misc utility */
+.link { font-size: 10px; color: var(--dim); cursor: pointer; transition: color 0.15s; }
+.link:hover { color: var(--orange); }
